@@ -1,0 +1,73 @@
+.box-sign-in-container {
+  width: 37rem;
+  height: 27.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  background: #dce5ed;
+}
+
+.box-sign-in-container h1{
+  color: #034694;
+}
+
+.box-form {
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.box-input-name,
+.box-input-email,
+.box-input-password {
+  width: 100%;
+
+}
+
+.box-input-name:focus-within,
+.box-input-email:focus-within,
+.box-input-password:focus-within {
+  border-bottom: 0.1rem solid rgb(240, 240, 240);
+}
+
+.box-input-name input,
+.box-input-email input,
+.box-input-password input {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 0.1120rem solid #000851;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  padding: 0.6rem;
+}
+
+.btn-create-account {
+  background-color: #034694;
+  color: #dce5ed;
+  width: 27rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 17px;
+}
+
+.box-redirect-log-in p{
+  font-size: 17px;
+}
+
+.box-redirect-log-in a{
+  text-decoration: none;
+  color: #177fc4;
+  margin-left: 0.3rem;
+}
