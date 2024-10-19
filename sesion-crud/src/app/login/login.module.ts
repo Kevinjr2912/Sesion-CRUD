@@ -13,6 +13,7 @@ import { LogInComponent } from './log-in/log-in.component';
   ],
   exports: [
     SignInComponent,
+    LogInComponent
   ]
 })
 export class LoginModule { }
