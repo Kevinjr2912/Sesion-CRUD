@@ -8,6 +8,9 @@ import { SignInComponent } from './sign-in/sign-in.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    SignInComponent,
   ]
 })
 export class LoginModule { }
