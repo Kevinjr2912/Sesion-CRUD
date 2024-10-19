@@ -46,7 +46,7 @@
         </svg>
       </p>
     </div>
-    <input type="text" placeholder="Ingresa tu email" />
+    <input type="text" placeholder="Ingresa tu email" [(ngModel)]="email"/>
   </div>
   <div class="box-password">
     <div class="box-icon-password">
@@ -70,9 +70,9 @@
         <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
       </svg>
     </div>
-    <input type="text" placeholder="Ingresa tu contraseña" />
+    <input type="text" placeholder="Ingresa tu contraseña" [(ngModel)]="password"/>
   </div>
   <div class="box-button">
-    <button class="btn-sign-in">Iniciar sesión</button>
+    <button class="btn-sign-in" (click)="logIn()">Iniciar sesión</button>
   </div>
 </div>

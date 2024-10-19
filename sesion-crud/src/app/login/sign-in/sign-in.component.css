@@ -66,8 +66,14 @@
   font-size: 17px;
 }
 
-.box-redirect-log-in a{
-  text-decoration: none;
-  color: #177fc4;
-  margin-left: 0.3rem;
+.box-redirect-log-in button{
+  border: none;
+  background: none;
+  color: #005d9b;
+  margin-left: 0rem;
+  font-size: 15px;
+}
+
+.box-redirect-log-in button:hover{
+  color: #3291d0;
 }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { ViewMainUserComponent } from './view-main-user/view-main-user.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,11 +12,13 @@ import { ViewMainUserComponent } from './view-main-user/view-main-user.component
     ViewMainUserComponent
   ],
   imports: [
-    CommonModule 
+    CommonModule,
+    FormsModule
   ],
   exports: [
     SignInComponent,
-    LogInComponent
+    LogInComponent,
+    ViewMainUserComponent
   ]
 })
 

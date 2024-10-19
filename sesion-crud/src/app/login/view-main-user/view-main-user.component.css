@@ -1,0 +1,9 @@
+.box-main-view {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #1cb5e0 0%, #000851 100%);
+
+}

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './view-main-user.component.css'
 })
 export class ViewMainUserComponent {
+  flag: boolean = false;
 
+  receiveFlag(flag: boolean){
+    this.flag = flag;
+  }
 }

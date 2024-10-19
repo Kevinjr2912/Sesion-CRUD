@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-sign-in',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './sign-in.component.css'
 })
 export class SignInComponent {
+  @Output() emitter = new EventEmitter<boolean>();
+  flag: boolean = false;
 
+  emitFlag(){
+    this.emitter.emit(!this.flag);
+  }
 }
