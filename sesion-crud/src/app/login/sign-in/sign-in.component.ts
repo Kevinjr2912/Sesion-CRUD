@@ -65,11 +65,11 @@ export class SignInComponent {
             this.userCreate.name_user = '';
             this.userCreate.email_user = '';
             this.userCreate.password_user = '';
-            
+
           } else {
             Swal.fire({
               title: 'Error',
-              text: 'Ocurrió un problema en el servidor',
+              text: 'A problem occurred on the server',
               icon: 'error',
               confirmButtonText: 'Aceptar',
             });
