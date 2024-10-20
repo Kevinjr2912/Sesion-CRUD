@@ -68,4 +68,8 @@ export class FormUpdateUserInformationComponent implements OnInit {
         }
       );
   }
+
+  redirectListUsers(): void {
+    this.router.navigate(['seeUsers']);
+  }
 }
