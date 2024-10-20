@@ -26,7 +26,7 @@
     </div>
   </div>
   <div class="box-actions" *ngIf="flag == true">
-    <div class="box-action-edit">
+    <div class="box-action-edit" (click)="redirectEdit()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-edit"

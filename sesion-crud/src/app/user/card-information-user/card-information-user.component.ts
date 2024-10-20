@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-information-user',
@@ -15,4 +16,10 @@ export class CardInformationUserComponent {
   // Input para renderizar las acciones
   @Input() flag: boolean = false;
 
+  constructor(private router: Router){}
+
+  redirectEdit () : void {
+    console.log('Redireccionando a la edición del usuario', this.id_user); 
+    this.router.navigate(['seeInformationUserToUpdate', this.id_user]);  
+  }
 }

@@ -1,0 +1,32 @@
+<div class="box-form-update-information-user">
+  <h3>Formulario para actualizar la información de un usuario</h3>
+  <div class="box-form">
+    <div class="box-input-name">
+      <input
+        type="text"
+        placeholder="Nombre"
+        [(ngModel)]="informationUser.name_user"
+      />
+    </div>
+    <div class="box-input-email">
+      <input
+        type="text"
+        placeholder="Email"
+        [(ngModel)]="informationUser.email_user"
+      />
+    </div>
+    <div class="box-input-password">
+      <input
+        type="text"
+        placeholder="Password"
+        [(ngModel)]="informationUser.password_user"
+      />
+    </div>
+  </div>
+  <button class="btn-update-information" (click)="updateInformation()">
+    Actualizar información
+  </button>
+  <button class="btn-cancel-process">
+    Cancelar
+  </button>
+</div>

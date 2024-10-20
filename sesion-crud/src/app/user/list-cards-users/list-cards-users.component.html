@@ -1,3 +1,10 @@
 <div class="box-list-cards">
-    
+  <app-card-information-user
+    *ngFor="let user of users"
+    [id_user]="user.id_user"
+    [name_user]="user.name_user"
+    [email_user]="user.email_user"
+    [password_user]="user.password_user"
+    [flag]="flag_list"
+  ></app-card-information-user>
 </div>
