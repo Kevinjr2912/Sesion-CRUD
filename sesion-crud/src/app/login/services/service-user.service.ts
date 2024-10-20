@@ -11,7 +11,7 @@ export class ServiceUserService {
 
   constructor(private http: HttpClient) { }
 
-  public createUser (user: any): Observable <any> {
-    return this.http.post<any>(`${this.url}/createUser`, user);
+  public createUser (user: any): Observable <void> {
+    return this.http.post<void> (`${this.url}/createUser`, user);
   } 
 }

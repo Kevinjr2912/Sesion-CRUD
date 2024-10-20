@@ -4,6 +4,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { ViewMainUserComponent } from './view-main-user/view-main-user.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   exports: [
     SignInComponent,

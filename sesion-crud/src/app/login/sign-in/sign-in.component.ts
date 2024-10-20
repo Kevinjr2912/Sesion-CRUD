@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { ServiceUserService } from '../services/service-user.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -8,8 +9,18 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class SignInComponent {
   @Output() emitter = new EventEmitter<boolean>();
   flag: boolean = false;
+  name: string = '';
+  email: string = '';
+  password: string = '';
+
+  constructor(_apiService: ServiceUserService){}
 
   emitFlag(){
     this.emitter.emit(!this.flag);
   }
+
+  registerUser(){
+
+  }
+
 }
