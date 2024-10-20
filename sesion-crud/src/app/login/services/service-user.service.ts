@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { IUserCreate } from '../interfaces/iuser-create';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,11 @@ export class ServiceUserService {
 
   constructor(private http: HttpClient) { }
 
-  public createUser (user: any): Observable <void> {
+  public createUser (user: IUserCreate): Observable <void> {
     return this.http.post<void> (`${this.url}/createUser`, user);
   } 
+
+  public authUser (user: any): Observable <void> {
+    return this.http.post<void> (`${this.url}/authUser`, user);
+  }
 }
