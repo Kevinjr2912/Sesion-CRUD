@@ -51,6 +51,7 @@
 .btn-create-account {
   background-color: #034694;
   color: #dce5ed;
+  cursor: pointer;
   width: 27rem;
   display: flex;
   justify-content: center;
@@ -62,6 +63,10 @@
   font-size: 17px;
 }
 
+.btn-create-account:hover {
+  background-color: #0158bc;
+}
+
 .box-redirect-log-in p{
   font-size: 17px;
 }
@@ -70,10 +75,12 @@
   border: none;
   background: none;
   color: #005d9b;
+  cursor: pointer;
   margin-left: 0rem;
   font-size: 15px;
 }
 
 .box-redirect-log-in button:hover{
   color: #3291d0;
+  cursor: pointer;
 }

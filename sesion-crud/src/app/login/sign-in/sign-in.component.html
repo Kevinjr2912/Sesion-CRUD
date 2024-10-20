@@ -2,13 +2,13 @@
   <h1>Formulario de registro</h1>
   <div class="box-form">
     <div class="box-input-name">
-      <input type="text" placeholder="Nombre" [(ngModel)]="email"/>
+      <input type="text" placeholder="Nombre" [(ngModel)]="userCreate.name_user"/>
     </div>
     <div class="box-input-email">
-      <input type="text" placeholder="Email" />
+      <input type="text" placeholder="Email" [(ngModel)]="userCreate.email_user"/>
     </div>
     <div class="box-input-password">
-      <input type="text" placeholder="Password" />
+      <input type="text" placeholder="Password" [(ngModel)]="userCreate.password_user"/>
     </div>
   </div>
   <button class="btn-create-account" (click)="registerUser()">Crear cuenta</button>
