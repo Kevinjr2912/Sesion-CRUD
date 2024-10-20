@@ -1,0 +1,7 @@
+.box-list-cards {
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}

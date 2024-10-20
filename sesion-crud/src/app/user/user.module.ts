@@ -12,7 +12,8 @@ import { ListCardsUsersComponent } from './list-cards-users/list-cards-users.com
     CommonModule
   ],
   exports: [
-    CardInformationUserComponent
+    CardInformationUserComponent,
+    ListCardsUsersComponent
   ]
 })
 export class UserModule { }
