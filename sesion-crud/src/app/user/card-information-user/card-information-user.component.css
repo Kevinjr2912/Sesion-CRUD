@@ -1,0 +1,63 @@
+.box-card-information {
+    width: 10rem;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: 2rem;
+    word-wrap: break-word;
+}
+
+
+.box-icon-user {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-information-user {
+    width: 12rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.box-information-user div {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-name {
+    font-size: 20px;
+}
+
+.box-email {
+    font-size: 18px;
+}
+
+.box-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.box-action-edit, .box-action-delete {
+    cursor: pointer;
+}
+
+.box-action-edit svg:hover {
+    stroke: rgb(41, 0, 107);
+}
+
+.box-action-delete svg:hover {
+    stroke: red;
+}

@@ -1,0 +1,92 @@
+.box-form-update-information-user {
+  width: 37rem;
+  height: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  background: #dce5ed;
+  margin: 10rem auto;
+}
+
+.box-form-update-information-user h3 {
+  color: #034694;
+  font-size: 22px;
+  margin-top: 4rem;
+}
+
+.box-form {
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.box-input-name,
+.box-input-email,
+.box-input-password {
+  width: 100%;
+}
+
+.box-input-name:focus-within,
+.box-input-email:focus-within,
+.box-input-password:focus-within {
+  border-bottom: 0.1rem solid rgb(240, 240, 240);
+}
+
+.box-input-name input,
+.box-input-email input,
+.box-input-password input {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 0.112rem solid #000851;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  padding: 0.6rem;
+}
+
+.btn-update-information {
+  background-color: #034694;
+  color: #dce5ed;
+  cursor: pointer;
+  width: 27rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 17px;
+}
+
+.btn-update-information:hover {
+  background-color: #0158bc;
+}
+
+.btn-cancel-process {
+  background-color: #dadada;
+  color: #000000;
+  cursor: pointer;
+  width: 27rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 17px;
+}
+
+.btn-cancel-process:hover {
+    background-color: black;
+    color: white;
+}
+
+
