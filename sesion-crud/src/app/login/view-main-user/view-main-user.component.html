@@ -1,5 +1,5 @@
 <div class="box-main-view">
-    <app-sign-in *ngIf="flag == false; else signIn" (emitter)="receiveFlag($event)"></app-sign-in>
+    <app-sign-in *ngIf="flag == false; else signIn"></app-sign-in>
 </div>
 
 <ng-template #signIn>

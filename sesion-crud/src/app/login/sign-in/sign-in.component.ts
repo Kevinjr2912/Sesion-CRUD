@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ServiceUserService } from '../services/service-user.service';
 import { IUserCreate } from '../interfaces/iuser-create';
 import Swal from 'sweetalert2';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -9,9 +10,6 @@ import Swal from 'sweetalert2';
   styleUrl: './sign-in.component.css',
 })
 export class SignInComponent {
-  // Ouputs
-  @Output() emitter = new EventEmitter<boolean>();
-
   // Variables u objetos
   flag: boolean = false;
 
@@ -22,11 +20,11 @@ export class SignInComponent {
   };
 
   // Inyectamos al contructor de nuestro servicio a usar
-  constructor(private _apiService: ServiceUserService) {}
+  constructor(private _apiService: ServiceUserService, private router: Router) {}
 
   // Función emite el nuevo valor de bandera (flag)
-  emitFlag() {
-    this.emitter.emit(!this.flag);
+  redirectLogIn () {
+    this.router.navigate(['logIn']);
   }
 
   // Función para registrar un usuario
